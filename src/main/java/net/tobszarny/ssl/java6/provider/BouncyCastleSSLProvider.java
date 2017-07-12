@@ -13,17 +13,6 @@ public final class BouncyCastleSSLProvider extends java.security.Provider {
     private static String fipsInfo = "Bouncy Castle JSSE provider (FIPS mode, crypto provider ";
     private static Boolean fips;
 
-    static {
-        System.out.println("dupa");
-//        if (Security.getProvider(BOUNCY_CASTLE_JSSE_PROVIDER_NAME) == null) {
-//            ProvidersUtil.insertProviderAfterProvider(new BouncyCastleSSLProvider(), "SUN");
-//        }
-//        if (Security.getProvider(BouncyCastleProvider.PROVIDER_NAME) == null) {
-//            ProvidersUtil.insertProviderAfterProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider(),
-//                    BOUNCY_CASTLE_JSSE_PROVIDER_NAME, "SUN");
-//        }
-    }
-
     public BouncyCastleSSLProvider() {
         super(BOUNCY_CASTLE_JSSE_PROVIDER_NAME, 1.6D, info);
         if (Boolean.TRUE.equals(fips)) {
