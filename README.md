@@ -20,7 +20,7 @@ security.provider.10=sun.security.smartcardio.SunPCSC
 security.provider.11=sun.security.mscapi.SunMSCAPI`
 
 Add
-_bcprov-jdk15on-1.52.jar
-ssl-provider-jvm16-0.2.jar_
+_bcprov-jdk15on-1.52.jar_
+_ssl-provider-jvm16-0.2.jar_
 
 to _jdk1.6.0_XX\jre\lib\ext_
