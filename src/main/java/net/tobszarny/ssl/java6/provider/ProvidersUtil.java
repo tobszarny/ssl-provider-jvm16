@@ -7,6 +7,9 @@ import java.security.Security;
 import java.util.Arrays;
 
 public class ProvidersUtil {
+    private ProvidersUtil() {
+    }
+
     public static void insertProviderAfterProvider(final Provider providerToInsert, String providerNameToInsertAfter,
                                                    String... orOtherProviderNamesToInsertAfter) {
         final int index = getProviderIndex(providerNameToInsertAfter);

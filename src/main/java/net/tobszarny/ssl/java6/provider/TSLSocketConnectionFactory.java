@@ -32,7 +32,8 @@ public class TSLSocketConnectionFactory extends SSLSocketFactory {
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
     static {
         if (Security.getProvider(BouncyCastleProvider.PROVIDER_NAME) == null)
-            Security.addProvider(new BouncyCastleProvider());
+            ProvidersUtil.insertProviderAfterProvider(new BouncyCastleProvider(),
+                    BouncyCastleSSLProvider.BOUNCY_CASTLE_JSSE_PROVIDER_NAME, "SUN");
     }
 
     private SSLSocketFactoryImpl sslSocketFactoryDelegate = null;
