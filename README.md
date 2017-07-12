@@ -7,10 +7,10 @@ Solves problem with message error "Unsupported curveId: XX"
 
 Edit _jdk1.6.0_XX\jre\lib\security\java.security_
 
-`security.provider.1=sun.security.provider.Sun
-**security.provider.2=net.tobszarny.ssl.java6.provider.BouncyCastleSSLProvider
-security.provider.3=org.bouncycastle.jce.provider.BouncyCastleProvider**
-security.provider.4=sun.security.rsa.SunRsaSign
+`security.provider.1=sun.security.provider.Sun`
+**`security.provider.2=net.tobszarny.ssl.java6.provider.BouncyCastleSSLProvider
+security.provider.3=org.bouncycastle.jce.provider.BouncyCastleProvider`**
+`security.provider.4=sun.security.rsa.SunRsaSign
 security.provider.5=com.sun.net.ssl.internal.ssl.Provider
 security.provider.6=com.sun.crypto.provider.SunJCE
 security.provider.7=sun.security.jgss.SunProvider
