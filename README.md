@@ -2,7 +2,7 @@
 
 Bouncy Castle based SSL provider for JVM 1.6. Mainly to fill the gaps for SSL connectivity with SQLServer over JDBC.
 
-** ABSOLETE IF YOU CAN UPGRADE BOUNCY CASTLE TO VERSION 1.58+ **
+**`ABSOLETE IF YOU CAN UPGRADE BOUNCY CASTLE TO VERSION 1.58+`**
 
 Solves problems with encoding strength, which is below SQLServer required on JVM 1.6.
 Solves problem with message error "Unsupported curveId: XX"
